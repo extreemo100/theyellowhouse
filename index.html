@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,15 +37,15 @@
     </script>
   <body>
     <div style="position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1; color: grey">
-        <button>Play video</button> - if the plane is black on mobile.
+        <button>Tap to Unmute</button> 
     </div>
-    <a-scene mindar-image="imageTargetSrc: https://xdsmgyjuwrsmlvtwsjyu.supabase.co/storage/v1/object/public/Mind%20Bucket/theyellowhouse.mind?t=2024-10-08T12%3A57%3A52.425Z;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc: https://xdsmgyjuwrsmlvtwsjyu.supabase.co/storage/v1/object/public/Mind%20Bucket/theyellowhouse.mind?t=2024-10-08T12%3A57%3A52.425Z" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       <a-assets>
         <video id="myVideo" src="https://res.cloudinary.com/dzq7c0mxt/video/upload/v1728392083/Castle_Vang_Gogh_gpatcf.mp4" muted preload loop></video>
       </a-assets>
       <a-entity mindar-image-target="targetIndex: 0" id="target">
-        <a-plane class="clickable" material="src: #myVideo; opacity: 0.5; transparent: true" video-controller>
+        <a-plane class="clickable" material="src: #myVideo; " width="1" height="1.3333" video-controller>
         </a-plane>
       </a-entity>
     </a-scene>
